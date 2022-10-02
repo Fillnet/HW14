@@ -14,6 +14,8 @@ public class Main {
         System.out.println("Книга: " + masterMargarita.getTitle() + " Автор: " +
                 masterMargarita.getAuthor().getName() + masterMargarita.getAuthor().getLastname() +
                 " Год издания: " + masterMargarita.getPublicationYear());
+
+        System.out.println(masterMargarita.bookInfo());
     }
 
 }

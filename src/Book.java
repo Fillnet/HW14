@@ -31,4 +31,8 @@ public class Book {
         this.publicationYear = publicationYear;
     }
 
+    public String bookInfo() {
+        return "Книга: " + this.title + " Автор: " + this.author.getFullName() + " Год публикации: " + this.publicationYear;
+    }
+
 }
