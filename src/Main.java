@@ -3,17 +3,12 @@ public class Main {
         Author tomCruze = new Author("Tom ", "Cruze ");
         Author kotBegemoth = new Author("Kot ", "Begemoth ");
         Book voinaMirov = new Book("Voina Mirov", tomCruze, 2020);
-        Book masterMargarita = new Book("Master & Margarita", kotBegemoth, 4987);
-        System.out.println("Книга: " + voinaMirov.getTitle() + " Автор: " +
-                voinaMirov.getAuthor().getName() + voinaMirov.getAuthor().getLastname() +
-                " Год издания: " + voinaMirov.getPublicationYear());
-        System.out.println("Книга: " + masterMargarita.getTitle() + " Автор: " +
-                masterMargarita.getAuthor().getName() + masterMargarita.getAuthor().getLastname() +
-                " Год издания: " + masterMargarita.getPublicationYear());
+        Book masterMargarita = new Book("Master & Margarita", kotBegemoth, 2020);
+        System.out.println(masterMargarita.bookInfo());
+        System.out.println(voinaMirov.bookInfo());
+        System.out.println(tomCruze.equals(kotBegemoth));
+        System.out.println(voinaMirov.equals(masterMargarita));
         masterMargarita.setPublicationYear(1987);
-        System.out.println("Книга: " + masterMargarita.getTitle() + " Автор: " +
-                masterMargarita.getAuthor().getName() + masterMargarita.getAuthor().getLastname() +
-                " Год издания: " + masterMargarita.getPublicationYear());
         System.out.println(masterMargarita.bookInfo());
     }
 }
