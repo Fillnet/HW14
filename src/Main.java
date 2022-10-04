@@ -8,8 +8,13 @@ public class Main {
         System.out.println(voinaMirov.bookInfo());
         System.out.println(tomCruze.equals(kotBegemoth));
         System.out.println(voinaMirov.equals(masterMargarita));
+        System.out.println(tomCruze.hashCode());
+        System.out.println(kotBegemoth.hashCode());
+        System.out.println(masterMargarita.hashCode());
+        System.out.println(voinaMirov.hashCode());
         masterMargarita.setPublicationYear(1987);
         System.out.println(masterMargarita.bookInfo());
+        System.out.println(voinaMirov.equals(masterMargarita));
     }
 }
 
